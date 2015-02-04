@@ -68,7 +68,7 @@ class EventHandler(pyinotify.ProcessEvent):
 
     def call_file_parser(self, target):
         print('processing ' + target)
-        target_distribute(target)
+       # target_distribute(target)
 
 
 if __name__ == "__main__":

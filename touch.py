@@ -4,6 +4,7 @@ import os
 import time
 import subprocess
 
+'''
 newlines = []
 try:
     file = open('/tmp/test', 'r')
@@ -17,6 +18,8 @@ print(newlines)
 file.close()
 
 print(newlines)
+'''
+
 
 # traverse root directory, and list directories as dirs and files as files
 def touch_files(init_dir):
@@ -32,9 +35,13 @@ def touch_files(init_dir):
 
             time.sleep(300)
 
-        for direc in dirs:
-            touch_files(direc)
+        for directory in dirs:
+            touch_files(directory)
 
 
-# print('walking...0')
-# touch_files("/tmp/test/")
+print('walking...0')
+
+import sys
+
+if len(sys.argv) > 1:  # if we have the two arguments, the second should be the path we want to traverse
+    touch_files(sys.argv[1])
