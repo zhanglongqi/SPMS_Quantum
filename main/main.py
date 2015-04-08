@@ -82,7 +82,7 @@ if __name__ == "__main__":
 
     fw_thread = threading.Thread(target=file_worker, args=(monitor_options.directory,))  # find the newest file
     fw_thread.start()
-
+"""
     while True:
         wm = WatchManager()
         handler = EventHandler(monitor_options)
@@ -94,3 +94,4 @@ if __name__ == "__main__":
             notifier.loop(pid_file='/tmp/pyinotify.pid')
         except (KeyboardInterrupt, pyinotify.PyinotifyError):
             notifier.stop()
+"""
