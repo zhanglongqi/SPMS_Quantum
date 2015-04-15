@@ -2,7 +2,9 @@
 SPMS_Quantum BMS data collection
 
 It runs on B3 in the FCC room to collect data from Quantum system (Existing Building System (ACMV-Quantum)) which stored and update patial data in their shared folder.
+
 B3 is set to read the data from the files, the setting shows below:
+
 ```sh
 # root at B3 in ~ [15:00:42]
 $ ifconfig
